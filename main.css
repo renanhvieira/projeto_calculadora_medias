@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto'; sans-serif;
+}
+
+body {
+    background-color: #E7E7E7;
+    padding-top: 100px; /*Espaçamento entre o top e o corpo da tabela*/
+}
+
+header {
+    display: flex;  /*Para que os elementos fiquem UM AO LADO DO OUTRO*/
+    align-items: center; /*Para que fiquem CENTRALIZADOS NA VERTICAL*/
+    margin-bottom: 40px; /*Para separar o cabeçalho do corpo da tabela*/
+}
+
+header img {
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%; /* Com os dois atributos, o elemento vai ter 960 pixel e ocupar todo ele, sendo possivel ser visto em qualquer monitor*/
+    margin: 0 auto;
+}
+
+form {
+    display: flex; /* para alinhar e dimensionar no mesmo tamanho os campos de Nome de atividade, Nota e o botal Adicionar*/
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between; /* distribuir o espaçamento entre os elementos*/
+    margin-bottom: 56px; /* Margem entre o formulario e a tabela*/
+}
+
+form input {
+    background-color: #fff;
+    font-size: 24px;
+    border: none;
+    border-bottom: 2px solid #000; /*Borda somente no inferior do botao, de largura 2px e preta*/
+    padding: 8px;
+}
+
+form button {
+    background-color: #009432;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 8px; /*espaçamento enter os elementos*/
+}
+
+table {
+    width: 100%; /*usar todo o espaço da tabela determinado */
+}
+
+table th { /*cabeçalho da TABELA*/
+    border-bottom: #000 solid 2px;
+    padding: 16px; /*distancia entre os campos Nome da atividade e outros até a borda feita*/
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    text-align: center; /*Centralizar a escrita do campo da tabela */
+    font-size: 18px;
+    padding: 16px 0; /*Espaçamento das linha da tabela, aplicando o 8px primeiro vale para cima e para baixo, o 0 é para os lados*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /*Borda inferior dos dados. O rgba no ultimo valor é o alpha = transparrencia*/
+}
+
+table td img {
+    height: 30px; /*Tamanho da imagem do emoti que vai ser colocado na tabela*/
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px; /*Borda arredondada*/
+}
+
+.aprovado {
+    background-color: #009432;
+}
+
+.reprovado {
+    background-color: red;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
